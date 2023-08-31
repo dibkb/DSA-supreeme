@@ -19,6 +19,16 @@ void holllowRectangle(){
         cout << endl;
     }
 }
+void halfPyramid(){
+    int ROW = 5;
+    int COL = 5;
+    for (int i = 0; i < ROW; i++){
+        for (int j = 0; j <= i; j++){
+        cout << "* ";
+        }
+        cout << endl;
+    }
+}
 int main(){
-    holllowRectangle();
+    halfPyramid();
 }
