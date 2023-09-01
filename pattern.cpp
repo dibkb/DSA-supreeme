@@ -21,7 +21,7 @@ void holllowRectangle(){
 }
 void halfPyramid(){
     int ROW = 5;
-    int COL = 5;
+    int COL = 5;  
     for (int i = 0; i < ROW; i++){
         for (int j = 0; j <= i; j++){
         cout << "* ";
@@ -29,6 +29,15 @@ void halfPyramid(){
         cout << endl;
     }
 }
+void invertdHalfPyramid(){
+    int n=5;
+    for (int row = 0; row <= n;row++){
+        for (int col = 0; col <= n-row; col++){
+        cout << "* ";
+        }
+        cout << endl;
+    }
+}
 int main(){
-    halfPyramid();
+    invertdHalfPyramid();
 }
