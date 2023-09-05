@@ -78,7 +78,22 @@ void fancyPattern(){
             cout << endl;
     }
 }
+void fancyPatternTwo(){
+    int N;
+    cout << "Enter number";
+    cin >> N;
+    int count = 10;
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N - i-1; j++)
+        {
+            cout << count;
+            count--;
+        }
+        cout << endl;
+    }
+}
 int main(){
-    fancyPattern();
+    fancyPatternTwo();
     return 0;
 }
