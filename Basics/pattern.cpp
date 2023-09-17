@@ -121,6 +121,27 @@ void fancyPattern(){
         cout << endl;
     }
 }
+void invertedHollowPyramid(){
+    int n=9;
+  for(int row =0;row < n;row++){
+    // print space
+    for(int col=0; col < row;col++){
+      cout <<" ";
+    }
+    // print first star;
+    cout <<"*";
+    // print space again
+    for (int space = 0; space < ((2 * n) - (2 * row) - 3);space++)
+    {
+      cout << " ";
+    }
+    if(row != n-1){
+      cout << "*";
+    }
+    cout << endl;
+  }
+
+}
 int main(){
-    fancyPattern();
+    invertedHollowPyramid();
 }
