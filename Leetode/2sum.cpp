@@ -14,10 +14,11 @@ using namespace std;
             mpp[val] = it;
         }
         return {-1,-1};
-
-        
     }
 int main(){
     vector<int> nums = {1, 2, 3, 4, 5, 6, 7};
-    
+    vector<int> res = twoSum(nums, 9);
+    for(auto it : res){
+            cout << it;
+    }
 }
